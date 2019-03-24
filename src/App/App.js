@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Nav from '../Nav/Nav';
+import Intro from '../Intro/Intro';
 
 class App extends Component {
     render() {
         return (
             <div>
                 <Nav />
-                <section className="intro">
-                    <div className="container">
-                        <h2>Подмамени от фалшивото съдържание?</h2>
-                        <div>
-                            <p>Фалшивите новини са разпространението на информация за несъществуващи факти или слухове, което се прави с цел подвеждане на аудиторията. Предизвикателството, пред което сме изправени днес е, че дезинформация вече е много по-широко разпространено явление. Фалшивите новини са вече добре маскирани с доза истинска информация, което ги прави много по-трудно за разпознаване.</p>
-                        </div>
-                    </div>
-                </section>
+                <Intro />
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
                 </div>
@@ -29,7 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     <div className="container">
                         <h2>Организирай фалшиво парти: <br />Лесни рецепти
                     </h2>
-                        <div className="d-flex flex-column justify-content-between flex-md-row">
+                        <div className="mt-3 d-flex flex-column justify-content-between flex-md-row">
                             <div className="mr-md-3">
                                 <h3>кексчета/ мъфини</h3>
                                 <p>В царството на мъфините има два вида мъфини, за които може да се каже без никакви колебания, че са класически мъфини и това са шоколадовите мъфини и ваниловите мъфини. Това е и първото ни предложение за вас.</p>

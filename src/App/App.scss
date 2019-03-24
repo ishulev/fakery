@@ -3,6 +3,7 @@
 @import '~bootstrap/scss/utilities/embed';
 @import '~bootstrap/scss/utilities/position';
 @import '~bootstrap/scss/utilities/sizing';
+@import '~bootstrap/scss/utilities/float';
 @import '~bootstrap/scss/navbar';
 
 nav {
@@ -27,8 +28,8 @@ h3 {
   display: block;
 }
 .recipes {
-  p{
-    text-align: justify;
+  p {
+    text-align: left;
     margin-bottom: 0;
   }
   .d-flex > div {
