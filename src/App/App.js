@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.scss';
+import Nav from '../Nav/Nav';
 
 class App extends Component {
     render() {
         return (
             <div>
+                <Nav/>
                 <section className="intro">
                     <h2>Подмамени от фалшивото съдържание?</h2>
                     <div>
