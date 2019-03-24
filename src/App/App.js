@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.scss';
+import Nav from '../Nav/Nav';
 
 class App extends Component {
     render() {
         return (
             <div>
+                <Nav/>
                 <section className="intro">
                     <h2>Подмамени от фалшивото съдържание?</h2>
                     <div>
@@ -16,9 +18,9 @@ class App extends Component {
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <p><a href="https://vimeo.com/312371587">Fake News Fairytale</a> from <a href="https://vimeo.com/user22372541">Kate Stonehill</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </section> */}
-                <section className="embed-responsive embed-responsive-16by9">
-                    <iframe title="fake-video" src="//player.vimeo.com/video/22428395"></iframe>
-                </section>
+                <div className="embed-responsive embed-responsive-16by9">
+                    <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
+                </div>
                 <section className="intro">
                     <h2>Създадохме фалшива новина</h2>
                     <div>
