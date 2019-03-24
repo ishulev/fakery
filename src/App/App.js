@@ -16,9 +16,9 @@ class App extends Component {
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <p><a href="https://vimeo.com/312371587">Fake News Fairytale</a> from <a href="https://vimeo.com/user22372541">Kate Stonehill</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </section> */}
-                <section className="embed-responsive embed-responsive-16by9">
-                    <iframe title="fake-video" src="//player.vimeo.com/video/22428395"></iframe>
-                </section>
+                <div className="embed-responsive embed-responsive-16by9">
+                    <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
+                </div>
                 <section className="intro">
                     <h2>Създадохме фалшива новина</h2>
                     <div>
@@ -27,30 +27,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     </div>
                 </section>
                 <section className="recipes">
-                    <h2>Организирай фалшиво парти: <br/>Лесни рецепти f
+                    <h2>Организирай фалшиво парти: <br />Лесни рецепти f
                     </h2>
                     <div className="d-flex flex-row justify-content-between">
                         <div className="flex-fill mr-3">
                             <h3>кексчета/ мъфини</h3>
                             <p>В царството на мъфините има два вида мъфини, за които може да се каже без никакви колебания, че са класически мъфини и това са шоколадовите мъфини и ваниловите мъфини …</p>
-                            <a className= 'readmore' href='#'>Прочети повече</a>
+                            <a className='readmore' href='#'>Прочети повече</a>
                         </div>
                         <div className="flex-fill ml-3">
                             <h3>Гуакамоле</h3>
                             <p>Намачкайте 3 броя добре узряло авокадо с вилица или в хаванче. Добавете 1 скилидка накълцан на ситно чесън, 1 червена люта чушка (може да използвате и суха стрита чушка …</p>
-                            <a className= 'readmore' href='#'>Прочети повече</a>
+                            <a className='readmore' href='#'>Прочети повече</a>
                         </div>
                     </div>
                     <div className="d-flex flex-row justify-content-between">
                         <div className="flex-fill mr-3">
                             <h3>кексчета/ мъфини</h3>
                             <p>В царството на мъфините има два вида мъфини, за които може да се каже без никакви колебания, че са класически мъфини и това са шоколадовите мъфини и ваниловите мъфини …</p>
-                            <a className= 'readmore' href='#'>Прочети повече</a>
+                            <a className='readmore' href='#'>Прочети повече</a>
                         </div>
                         <div className="flex-fill ml-3">
                             <h3>Гуакамоле</h3>
                             <p>Намачкайте 3 броя добре узряло авокадо с вилица или в хаванче. Добавете 1 скилидка накълцан на ситно чесън, 1 червена люта чушка (може да използвате и суха стрита чушка …</p>
-                            <a className= 'readmore' href='#'>Прочети повече</a>
+                            <a className='readmore' href='#'>Прочети повече</a>
                         </div>
                     </div>
                 </section>
