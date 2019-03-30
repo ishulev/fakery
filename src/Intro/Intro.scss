@@ -1,7 +1,37 @@
-.intro-header {
-    color: #543E5C;
+$purple-intro: #543E5C;
+
+.section-intro {
+  min-height: calc(100vh - 56px);
+  h2 {
+    color: $purple-intro;
   }
-  .intro-body {
-    background-color: #543E5C;
+}
+
+.before-background {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 200vw;
+    // fill content
+    // stolen from https://codepen.io/chriscoyier/pen/gbMdbr
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -50vw;
+  }
+  &.bb--purple {
     color: white;
+    &:before {
+      background: $purple-intro;
+    }
   }
+}
+
+.purple-padding--bottom {
+  padding-bottom: 42px;
+}
+
+.purple-padding--top {
+  padding-top: 18px;
+}
