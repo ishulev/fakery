@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
+import pinkCupcake from '../common/pink-cupcake.png';
 
 class App extends Component {
     render() {
@@ -12,12 +13,15 @@ class App extends Component {
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
                 </div>
-                <section className="intro">
+                <div className="pb-5 pt-4" style={{backgroundColor: '#C28A81', color: '#fff'}}>
                     <div className="container">
-                        <h2>Създадохме фалшива новина</h2>
-                        <p>Защо ни пука за фалшивите новини?
+                        <h2 className="mt-0">Създадохме фалшива новина</h2>
+                        <p className="mb-0">Защо ни пука за фалшивите новини?
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </div>
+                </div>
+                <section className="pink-background row justify-content-center align-items-center">
+                    <img src={pinkCupcake} className="rounded-circle round-shadow" alt="Pink cupcake" style={{maxWidth: '465px'}}/>
                 </section>
                 <section className="recipes">
                     <div className="container">
@@ -60,6 +64,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                             </div>
                         </div>
                     </div>
+                </section>
+                <section className="blue-background">
                 </section>
             </div>
         )
