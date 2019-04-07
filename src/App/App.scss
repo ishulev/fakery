@@ -23,15 +23,34 @@ h3 {
   font-size: 20px;
   text-transform: uppercase;
 }
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: underline;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+a {
+  @extend .link;
+}
+
 .readmore {
   font-family: 'Roboto', sans-serif;
   text-align: right;
-  text-decoration: underline;
   display: block;
 }
 .recipes {
   background-color: #B0777C;
   color: #fff;
+  padding-top: 35px;
+  padding-bottom: 50px;
   p {
     text-align: left;
     margin-bottom: 0;
@@ -51,17 +70,44 @@ section {
   min-height: 100vh;
 }
 
+.padding-50 {
+  padding: 50px;
+}
+
 .pink-background {
   background-color: #d8b2ba;
   background-image: url("data:image/svg+xml,%3Csvg width='48' height='32' viewBox='0 0 48 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a6686c' fill-opacity='0.4'%3E%3Cpath d='M27 32c0-3.314 2.686-6 6-6 5.523 0 10-4.477 10-10S38.523 6 33 6c-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 6.627 0 12 5.373 12 12s-5.373 12-12 12c-2.21 0-4 1.79-4 4h-2zm-6 0c0-3.314-2.686-6-6-6-5.523 0-10-4.477-10-10S9.477 6 15 6c3.314 0 6-2.686 6-6h-2c0 2.21-1.79 4-4 4C8.373 4 3 9.373 3 16s5.373 12 12 12c2.21 0 4 1.79 4 4h2z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .blue-background {
-  background-color: #a2bac2;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2385a3aa' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #a0b6bb;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2376949b' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .round-shadow {
-  box-shadow: 37px -3px 52px 0px rgba(158, 91, 91, 0.7);
+  box-shadow: 37px -3px 52px 0px rgba(0, 0, 0, 0.5);
   border-radius: 100%;
+}
+
+.how-to-recognize {
+  background-color: #A0B6BB;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.info-questions {
+  background-color: #76949B;
+  padding: 25px;
+  margin-top: 10px;
+  h4 {
+    text-transform: uppercase;
+  }
+}
+
+.more-info {
+  background-color: #76949B;
+  color: #fff;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
