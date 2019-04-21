@@ -38,9 +38,9 @@ class MyNav extends Component {
     render() {
         // navItems.setLanguage('bg');
         return (
-            <Navbar sticky="top" expand="lg" collapseOnSelect="true">
-                <Container>
-                    <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt=""/></Navbar.Brand>
+            <Container>
+                <Navbar sticky="top" expand="lg" collapseOnSelect="true">
+                    <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
@@ -52,8 +52,8 @@ class MyNav extends Component {
                             <Nav.Link href="#link5" onSelect={() => this.changeLang()}>{navItems.changeLang}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
-            </Navbar>
+                </Navbar>
+            </Container>
         );
     }
 }
