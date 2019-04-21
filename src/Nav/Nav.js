@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import logo from './fakery_logo-01.svg';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+
+import logo from './fakery_logo_label.svg';
 import './Nav.scss';
 import LocalizedStrings from 'react-localization';
 
@@ -22,56 +26,36 @@ const navItems = new LocalizedStrings({
     }
 });
 
-class Nav extends Component {
+class MyNav extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
-    changeLang(e) {
-        e.preventDefault();
+    changeLang() {
         navItems.setLanguage(navItems.changeLang.toLowerCase());
         this.setState({});
     }
     render() {
         // navItems.setLanguage('bg');
         return (
-            <nav className="navbar navbar-expand-md sticky-top">
-                <div className="container">
-                    <a className="navbar-brand" href="#">
-                        <img src={logo} width="80" alt="Fakery Logo" />
-                    </a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.phenomena} <span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.fakeNews}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.organizeEvent}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.about}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.resources}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">{navItems.contact}</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" onClick={e => this.changeLang(e)} href="#">{navItems.changeLang}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar sticky="top" expand="lg" collapseOnSelect="true">
+                <Container>
+                    <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt=""/></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="#home">{navItems.phenomena}</Nav.Link>
+                            <Nav.Link href="#link1">{navItems.organizeEvent}</Nav.Link>
+                            <Nav.Link href="#link2">{navItems.about}</Nav.Link>
+                            <Nav.Link href="#link3">{navItems.resources}</Nav.Link>
+                            <Nav.Link href="#link4">{navItems.contact}</Nav.Link>
+                            <Nav.Link href="#link5" onSelect={() => this.changeLang()}>{navItems.changeLang}</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         );
     }
 }
 
-export default Nav;
+export default MyNav;
