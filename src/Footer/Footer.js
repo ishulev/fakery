@@ -6,7 +6,7 @@ import openSocietyLogo from '../common/open-society-foundations-vector-logo.png'
 class Footer extends Component {
     render() {
         return (
-            <footer>
+            <footer style={{'backgroundColor': 'gray'}}>
                 <div className="container">
                     <p>Как протече фалшивото ти парти? Изпрати ни снимки и ни разкажи на: hello@fineacts.co</p>
                     <div className="row">
