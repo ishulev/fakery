@@ -10,8 +10,9 @@ import LocalizedStrings from 'react-localization';
 const navItems = new LocalizedStrings({
     bg: {
         phenomena: 'Феноменът',
-        organizeEvent: 'Направи фейк парти',
+        organizeEvent: 'Фейк парти',
         about: 'Кампанията',
+        checklist: 'Чеклист',
         resources: 'Ресурси',
         contact: 'Контакти',
         changeLang: 'EN'
@@ -20,6 +21,7 @@ const navItems = new LocalizedStrings({
         phenomena: 'Phenomenon',
         organizeEvent: 'Make a fake party',
         about: 'The campaign',
+        checklist: 'Checklist',
         resources: 'Resources',
         contact: 'Contacts',
         changeLang: 'BG'
