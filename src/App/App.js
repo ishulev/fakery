@@ -65,7 +65,7 @@ class App extends Component {
                 <div className="padding-50 blue-background row justify-content-center align-items-center">
                     <img src={greenCupcake} className="rounded-circle round-shadow" alt="Green cupcake" style={{ maxWidth: '465px' }} />
                 </div>
-                <section className="how-to-recognize">
+                <section name="organize" className="how-to-recognize">
                     <div className="container">
                         <h2>Направи фейк кейк парти</h2>
                         <h3>Фалшиво парти, истински фън</h3>

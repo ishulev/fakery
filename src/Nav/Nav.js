@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-scroll';
 
 import logo from './fakery_logo_label.svg';
 import './Nav.scss';
@@ -19,7 +20,7 @@ const navItems = new LocalizedStrings({
     },
     en: {
         phenomena: 'Phenomenon',
-        organizeEvent: 'Make a fake party',
+        organizeEvent: 'Fake party',
         about: 'The campaign',
         checklist: 'Checklist',
         resources: 'Resources',
@@ -47,7 +48,9 @@ class MyNav extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
                             <Nav.Link href="#home">{navItems.phenomena}</Nav.Link>
-                            <Nav.Link href="#link1">{navItems.organizeEvent}</Nav.Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="organize" spy={true} smooth={true} offset={50} duration={500}>
+                                {navItems.organizeEvent}
+                            </Link>
                             <Nav.Link href="#link2">{navItems.about}</Nav.Link>
                             <Nav.Link href="#link3">{navItems.resources}</Nav.Link>
                             <Nav.Link href="#link4">{navItems.contact}</Nav.Link>
