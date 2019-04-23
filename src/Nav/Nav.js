@@ -43,7 +43,7 @@ class MyNav extends Component {
         return (
             <Container>
                 <Navbar sticky="top" expand="lg" collapseOnSelect="true">
-                    <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt="" /></Navbar.Brand>
+                    {/* <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt="" /></Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">

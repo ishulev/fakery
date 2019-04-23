@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.scss';
 import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
+import Footer from '../Footer/Footer';
 import pinkCupcake from '../common/pink-cupcake.png';
 import greenCupcake from '../common/green-cupcake.png';
-import logoFull from '../common/fakery_logo_full.svg';
 
 class App extends Component {
     render() {
@@ -53,7 +53,6 @@ class App extends Component {
                 <section className="recipes">
                     <div className="container">
                         <h2 className="mt-0">Кампанията</h2>
-                        <img src={logoFull} style={{'maxWidth': '100px'}} alt="Fakery logo full"/>
                         <p>По случай 3 май, Международния ден на свободата на печата, стартираме Fakery – кампания за повишаване на медийната грамотност.
                             <br />Fakery e кампания на <a href="https://fineacts.co/">Fine Acts</a>, глобална платформа, която среща изкуството и активизма в името на социалната промяна.
                             <br />Зад идеята на Fakery (the Fake News Bakery) са сценографката Илияна Кънчева и програмистът Иван Шулев.
@@ -133,9 +132,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <p>Как протече фалшивото ти парти? Изпрати ни снимки и ни разкажи на: hello@fineacts.co</p>
-                </div>
+                <Footer/>
             </div>
         )
     }
