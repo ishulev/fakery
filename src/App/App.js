@@ -74,8 +74,8 @@ class App extends Component {
                 <section name="organize" className="organize-party">
                     <div className="container">
                         <h2>Направи фейк кейк парти</h2>
-                        <p>Няма по-добър начин да намериш истината от това да застанеш очи в очи с нея. Но как сядаш с човек и му обясняваш, че някой има интерес той да бъде системно дезинформиран и лъган?</p>
-                        <p>Ето така - каниш приятели или роднини, (част от) които често консумират фалшиви новини, на Фейк кейк парти. Приготвяш подмолната ни рецепта за къпкейкове или създаваш свой кулинарен кошмар и даваш нужния забавен старт на този иначе толкова тегав разговор.</p>
+                        <p>Разговорът за фалшивите новини не е лесен. Как изобщо да го започнеш?</p>
+                        <p>Ето така – каниш приятели или роднини, част от които често консумират фалшиви новини, на Фейк кейк парти. Приготвяш подмолната ни рецепта за къпкейкове или създаваш свой кулинарен кошмар и даваш нужния забавен старт на иначе тегав разговор.</p>
                         <h3>Кексчета от ада</h3>
                         <p>В купа разбиваш две яйца, две чаени чаши кисело мляко, половин чаена чаша олио и една чаена лъжица сода. Добавяш две чаени чаши брашно. Мяташ десет супени лъжици табаско и/или рибен сос. Добавяш чаена чаша натрошено сирене и подправки на око и разбъркваш добре. Хей, имам останал малко салам от неделя? Режеш на ситно и слагаш. Във всяко гнездо на формата за мъфини слагаш по една хартиена кошничка. Изливаш сместа във всяка кошничка, като пълниш до достигане на ¾ от обема ѝ. Печеш в предварително загрята на 180-200 градуса фурна, за около 20-25 минути. Паралелно разбиваш с миксер смес от чаша пудра захар, пакет масло, щипка ванилия, и малко мляко, до получаване на гъста смес. Декорираш кексчетата с шприц, докато не станат красиви като каузата ти.</p>
                         <p>Няколко съвета за този (и всеки подобен) разговор:</p>
@@ -83,8 +83,8 @@ class App extends Component {
                             <li>Не бъди назидателен, не размахвай пръст. Никой не харесва демонстрации на морално превъзходство и самодоволна арогантност. Хората спират да слушат, ако им обясниш, че грешат, и влизат в защитен режим. Не искаш в една вечер и да натровиш, и да се скараш с вашите.</li>
                             <li>Подходи много леко и внимателно. Не рамкирай партито като “интервенция” за конкретен човек – това е ужасно смущаващо и няма да е ефективно. По-скоро го представи като по-широк разговор по темата, който цели семейството ти / приятелският ти кръг да взема информирани решения, и да не попада в клопката на лошите. Така сте “вие” срещу “тях”; а не ти срещу баба.</li>
                             <li>Започни с някаква притеснителна статистика, която демонстрира размера на проблема. Дай пример, в който самият ти си бил подведен от фалшива новина. Питай дали друг е имал подобен опит, или поне съмнения. Подготви се с още примери на брутални лъжи, стабилно минавали за истина.</li>
-                            <li>Премини към отворен брейнсторминг – как можем да се защитим от фалшивите новини? Как да ги разпознаваме? Как да подобрим медийната си диета? Дай някакви предложения и питай за още идеи.</li>
-                            <li>Забавлявай се. Фалшивите новини оставят лош вкус, който само сладостта от това да ги бориш със смях може да отмие.</li>
+                            <li>Премини към брейнсторминг – как можем да се защитим от фалшивите новини? Как да ги разпознаваме? Как да подобрим медийната си диета? Дай някакви предложения и питай за още идеи.</li>
+                            <li>Забавлявай се. Фалшивите новини оставят лош вкус, който само сладостта от това да ги борим със смях може да отмие.</li>
                         </ul>
                     </div>
                 </section>
@@ -94,37 +94,48 @@ class App extends Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <h4>Научи се да разпознаваш фалшивите новини:</h4>
-                                <p><a href="https://www.freedomforuminstitute.org/first-amendment-center/primers/fake-news-primer/">Freedom Forum Institute</a></p>
-                                <p><a href="https://www.ifla.org/publications/node/11174">International Federation of Library Associations</a></p>
+                                <ul>
+                                    <li><a href="https://www.freedomforuminstitute.org/first-amendment-center/primers/fake-news-primer/">Freedom Forum Institute</a></li>
+                                    <li><a href="https://www.ifla.org/publications/node/11174">International Federation of Library Associations</a></li>
+                                </ul>
                             </div>
                             <div className="col-md-4">
-                                <h4>Игри</h4>
-                                <p>Бзираната във Вашингтон дигитална творческа агенция
-                                    ISL създаде <a href="https://playfakenews.com/" target="_blank">Fake News: The Game</a> и я представи като
-                                    приложение и <a href="http://www.niemanlab.org/2017/08/games-might-be-a-good-tool-for-fighting-fake-news-heres-what-three-developers-have-learned/?ref=playfakenews.com" target="_blank">пътуваща аркадна игра в някои барове</a>.
-                                </p>
-                                <p>Образователна игра <a href="http://factitious.augamestudio.com/#/" target="_blank">Factitious</a>, създадена от American University | Game Lab, Washington D.C.</p>
+                                <h4>Тествай уменията си с тези игри:</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://playfakenews.com/">Fake News: The Game</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://factitious.augamestudio.com/#/">Factitious</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="col-md-4">
-                                <h4>Видео</h4>
-                                <p><a href="https://www.ted.com/talks/stephanie_busari_how_fake_news_does_real_harm" target="_blank">Как фалшивите новини нанасят реална вреда</a></p>
-                                <p><a href="https://www.ted.com/talks/mona_chalabi_3_ways_to_spot_a_bad_statistic?referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Три начина как да идентифицираш неточна статистика (bad statistic)</a></p>
-                                <p><a href="https://www.ted.com/talks/markham_nolan_how_to_separate_fact_and_fiction_online?language=en&referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Как да разграничиш между факти и измислица</a></p>
+                                <h4>Гледай TED лекции по темата:</h4>
+                                <ul>
+                                    <li><a href="https://www.ted.com/talks/stephanie_busari_how_fake_news_does_real_harm" target="_blank">Как фалшивите новини нанасят реална вреда</a></li>
+                                    <li><a href="https://www.ted.com/talks/mona_chalabi_3_ways_to_spot_a_bad_statistic?referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Три начина как да идентифицираш лоша статистика</a></li>
+                                    <li><a href="https://www.ted.com/talks/markham_nolan_how_to_separate_fact_and_fiction_online?language=en&referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Как да разграничиш между факти и измислица</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                                <h4>Още за фалшивите новини</h4>
-                                <p><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">Най-мащабното изследване</a> (Science, март 2018) за разпространението на фалшиви и достоверни новини</p>
-                                <p><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">Евробарометър</a> (април 2018) за фалшивите новини и дезинформацията онлайн</p>
-                                <p><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">Доклад за дигитални новини</a> на Reusters Institute (2018) | University of Oxford</p>
-                                <p><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">Идеи за противодействие</a> от Асоциацията на Европейските журналисти</p>
-                                <p><a href="https://www.medialit.org/">Набор от ресурси</a> от американския Център за медийна грамотност</p>
+                                <h4>Научи повече за феномена:</h4>
+                                <ul>
+                                    <li><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">Най-мащабното изследване</a> (Science, март 2018) за разпространението на фалшиви и достоверни новини</li>
+                                    <li><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">Евробарометър</a> (април 2018) за фалшивите новини и дезинформацията онлайн</li>
+                                    <li><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">Доклад за дигитални новини</a> на Reusters Institute (2018) | University of Oxford</li>
+                                    <li><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">Идеи за противодействие</a> от Асоциацията на Европейските журналисти</li>
+                                    <li><a href="https://www.medialit.org/">Набор от ресурси</a> от американския Център за медийна грамотност</li>
+                                </ul>
                             </div>
                             <div className="col-md-6">
                                 <h4>Ако се съмняваш в дадена новина, изпрати сигнал до платформа за проверяване на новини:</h4>
-                                <p>В България: <a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check</a> на Mediapool; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</p>
-                                <p>По света: <a href="https://www.snopes.com/">Snopes</a>; <a href="http://www.politifact.com/">Politifact</a>; <a href="https://www.factcheck.org/">FactCheck.org</a></p>
+                                <ul>
+                                    <li>В България: <a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check</a> на Mediapool; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</li>
+                                    <li>По света: <a href="https://www.snopes.com/">Snopes</a>; <a href="http://www.politifact.com/">Politifact</a>; <a href="https://www.factcheck.org/">FactCheck.org</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
