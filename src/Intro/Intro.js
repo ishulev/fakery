@@ -8,6 +8,10 @@ class Intro extends Component {
     componentWillReceiveProps(newProps) {
         intro.setLanguage(newProps.lang);
     }
+    componentDidMount() {
+        intro.setLanguage(this.props.lang);
+        this.setState({});
+    }
     render() {
         return (
             <section className="d-flex flex-column section-intro">

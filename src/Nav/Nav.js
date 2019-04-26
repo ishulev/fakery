@@ -8,15 +8,16 @@ import './Nav.scss';
 import { navItems } from '../i18n/translations';
 
 class MyNav extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
+    componentDidMount() {
+        navItems.setLanguage(this.props.lang);
+        this.setState({});
+    }
+    componentWillReceiveProps(newProps) {
+        navItems.setLanguage(newProps.lang);
     }
     changeLang() {
         const langToChange = navItems.changeLang.toLowerCase();
         this.props.changeLang(langToChange, navItems);
-        // navItems.setLanguage(langToChange);
-        this.setState({});
     }
     render() {
         return (

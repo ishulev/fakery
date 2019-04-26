@@ -25,7 +25,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Nav changeLang={this.changeLang.bind(this)} />
+                <Nav lang={this.state.language} changeLang={this.changeLang.bind(this)} />
                 <Intro lang={this.state.language} />
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
