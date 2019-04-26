@@ -4,30 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-scroll';
 
-import logo from './fakery_logo_label.svg';
 import './Nav.scss';
-import LocalizedStrings from 'react-localization';
-
-const navItems = new LocalizedStrings({
-    bg: {
-        phenomena: 'Феноменът',
-        organizeEvent: 'Фейк парти',
-        about: 'Кампанията',
-        checklist: 'Чеклист',
-        resources: 'Ресурси',
-        contact: 'Контакти',
-        changeLang: 'EN'
-    },
-    en: {
-        phenomena: 'Phenomenon',
-        organizeEvent: 'Fake party',
-        about: 'The campaign',
-        checklist: 'Checklist',
-        resources: 'Resources',
-        contact: 'Contacts',
-        changeLang: 'BG'
-    }
-});
+import { navItems } from '../i18n/translations';
 
 class MyNav extends Component {
     constructor(props) {
@@ -35,11 +13,12 @@ class MyNav extends Component {
         this.state = {};
     }
     changeLang() {
-        navItems.setLanguage(navItems.changeLang.toLowerCase());
+        const langToChange = navItems.changeLang.toLowerCase();
+        this.props.changeLang(langToChange, navItems);
+        // navItems.setLanguage(langToChange);
         this.setState({});
     }
     render() {
-        // navItems.setLanguage('bg');
         return (
             <Container>
                 <Navbar sticky="top" expand="lg" collapseOnSelect="true">

@@ -7,11 +7,26 @@ import pinkCupcake from '../common/pink-cupcake.png';
 import greenCupcake from '../common/green-cupcake.png';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            language: 'bg'
+        }
+    }
+    changeLang(lang, transString) {
+        transString.setLanguage(lang);
+        this.setLang(lang);
+    }
+    setLang(lang) {
+        this.setState({
+            language: lang
+        });
+    }
     render() {
         return (
             <div>
-                <Nav />
-                <Intro />
+                <Nav changeLang={this.changeLang.bind(this)} />
+                <Intro lang={this.state.language} />
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
                 </div>
