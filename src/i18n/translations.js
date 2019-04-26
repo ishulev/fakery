@@ -37,3 +37,22 @@ export const navItems = new LocalizedStrings({
         changeLang: 'BG'
     }
 });
+
+export const mainText = new LocalizedStrings({
+    bg: {
+        phenom: {
+            title: 'Феноменът',
+            p1: 'Фалшивите новини представляват разпространение на информация за измислени “факти” или слухове, което се прави с цел подвеждане на аудиторията.',
+            p2: 'Предизвикателството на преднамерено разпространяваните фалшиви новини се подсилва от липсата на медийна грамотност у хората. Средно 46% от европейските граждани се информират само от социалните медии ({0}, 2016), всеки шести човек споделя новини/статии в социалните мрежи, без да ги чете ({1} 2016), много хора имат проблем с разпознаването на фалшиви новини, 80% не разграничават платено от редакционно съдържание, 80% не поставят под съмнение достоверността на снимки онлайн ({2}, 2016).',
+            p3: 'Фалшивите новини оставят лош вкус. Ефектите от тях са дълготрайни и опасни. Те оформят поведението ни чрез внушения и противопоставяне; влияят на изхода на избори, а оттам – на законите и средата, в която живеем; и дори могат да поставят в риск здравето ни.'
+        }
+    },
+    en: {
+        phenom: {
+            title: 'Phenomenon',
+            p1: 'Fake news is the dissemination of information that has been fabricated or tampered with, with the intention to deceive and mislead others.',
+            p2: 'The challenge of deliberately spreading fake news is further made worse by the low levels of media literacy. On average, 46% of Europeans get their news through social media ({0}, 2016) and every sixth person shares news/articles on social networks without reading them ({1} 2016). Many people have a problem with fake news recognition – 80% cannot identify paid editorial content and 80% do not question the authenticity of online photos ({2}, 2016).',
+            p3: 'Fake news leaves a bad taste. Their effects can be long-lasting and dangerous. They shape our behavior through manipulation; they influence the outcome of elections and, hence, the laws and the context in which we live; and can even put our health at risk.'
+        }
+    }
+})

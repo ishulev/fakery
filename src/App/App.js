@@ -5,6 +5,7 @@ import Intro from '../Intro/Intro';
 import Footer from '../Footer/Footer';
 import pinkCupcake from '../common/pink-cupcake.png';
 import greenCupcake from '../common/green-cupcake.png';
+import { mainText } from '../i18n/translations';
 
 class App extends Component {
     constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
         this.setLang(lang);
     }
     setLang(lang) {
+        mainText.setLanguage(lang);
         this.setState({
             language: lang
         });
@@ -38,10 +40,10 @@ class App extends Component {
                 <section>
                     <div className="pb-5 pt-4" style={{ backgroundColor: '#C28A81', color: '#fff' }}>
                         <div className="container">
-                            <h2 className="mt-0">Феноменът</h2>
-                            <p>Фалшивите новини представляват разпространение на информация за измислени “факти” или слухове, което се прави с цел подвеждане на аудиторията.</p>
-                            <p>Предизвикателството на преднамерено разпространяваните фалшиви новини се подсилва от липсата на медийна грамотност у хората. Средно 46% от европейските граждани се информират само от социалните медии (<a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/11/Digital-News-Report-2016.pdf?x89475">Oxford University</a>, 2016), всеки шести човек споделя новини/статии в социалните мрежи, без да ги чете (<a href="https://www.forbes.com/sites/jaysondemers/2016/08/08/59-percent-of-you-will-share-this-article-without-even-reading-it/#1cc423402a64">Forbes</a> 2016), много хора имат проблем с разпознаването на фалшиви новини, 80% не разграничават платено от редакционно съдържание, 80% не поставят под съмнение достоверността на снимки онлайн (<a href="https://purl.stanford.edu/fv751yt5934">Stanford</a>, 2016).</p>
-                            <p>Фалшивите новини оставят лош вкус. Ефектите от тях са дълготрайни и опасни. Те оформят поведението ни чрез внушения и противопоставяне; влияят на изхода на избори, а оттам – на законите и средата, в която живеем; и дори могат да поставят в риск здравето ни.</p>
+                            <h2 className="mt-0">{mainText.phenom.title}</h2>
+                            <p>{mainText.phenom.p1}</p>
+                            <p>{mainText.formatString(mainText.phenom.p2, <a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/11/Digital-News-Report-2016.pdf?x89475">Oxford University</a>, <a href="https://www.forbes.com/sites/jaysondemers/2016/08/08/59-percent-of-you-will-share-this-article-without-even-reading-it/#1cc423402a64">Forbes</a>, <a href="https://purl.stanford.edu/fv751yt5934">Stanford</a>)}</p>
+                            <p>{mainText.phenom.p3}</p>
                         </div>
                     </div>
                     <div className="padding-50 pink-background row justify-content-center align-items-center">
