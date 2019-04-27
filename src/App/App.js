@@ -14,6 +14,9 @@ class App extends Component {
             language: 'bg'
         }
     }
+    componentDidMount() {
+        this.setLang(this.state.language);
+    }
     changeLang(lang, transString) {
         transString.setLanguage(lang);
         this.setLang(lang);
