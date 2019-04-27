@@ -55,15 +55,15 @@ class App extends Component {
                 </section>
                 <section className="recipes">
                     <div className="container">
-                        <h2 className="mt-0">Кампанията</h2>
-                        <p>По случай 3 май, Международният ден на свободата на пресата, стартираме Fakery – кампания за повишаване на медийната грамотност, и за борба с фалшивите новини и дезинформацията.</p>
-                        <p>ВКЛЮЧИ СЕ В БИТКАТА ЗА ИСТИНАТА СЕГА!</p>
-                        <p>Ето как:</p>
+                        <h2 className="mt-0">{mainText.campaign.title}</h2>
+                        <p>{mainText.campaign.p1}</p>
+                        <p>{mainText.campaign.p2}</p>
+                        <p>{mainText.campaign.p3}</p>
                         <p>
-                            LVL 1: Сподели видеото, сайта или тактиките за борба с фалшиви новини;
-                            <br />LVL 2: Поговори с приятел или роднина, който мислиш, че има лоша медийна диета;
-                            <br />LVL 1000: Ако си учител/родител, покажи видеото на децата, а после обсъдете феномена и тактиките;
-                            <br />LVL 1001: Организирай свое собствено фалшиво парти вкъщи, в училище или в офиса.
+                        {mainText.campaign.p4}
+                            <br />{mainText.campaign.p5}
+                            <br />{mainText.campaign.p6}
+                            <br />{mainText.formatString(mainText.campaign.p7, <a href="#">{mainText.campaign.link}</a>)}
                         </p>
                         <p>***</p>
                         <p>Fakery e кампания на <a href="https://fineacts.co/">Fine Acts</a>, глобална платформа, която среща изкуството и активизма в името на социалната промяна.</p>
