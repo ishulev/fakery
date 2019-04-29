@@ -96,6 +96,10 @@ export const mainText = new LocalizedStrings({
             link4_5: 'Набор от ресурси от американския Център за медийна грамотност',
             link5_1: 'В България: ',
             link5_2: 'По света: '
+        },
+        hello: {
+            title: 'Контакти',
+            p1: 'Как протече фалшивото ти парти? Изпрати ни снимки и ни разкажи на: hello@fineacts.co'
         }
     },
     en: {
@@ -155,17 +159,10 @@ export const mainText = new LocalizedStrings({
             link4_5: 'Resources by the Center for Media Literacy',
             link5_1: '',
             link5_2: ''
+        },
+        hello : {
+            title: 'Contact us',
+            p1: 'Tell us about your Fake Cake Party! Send us pictures and stories at: hello@fineacts.co'
         }
     }
 });
-
-export const footer = new LocalizedStrings({
-    bg: {
-        title: 'Контакти',
-        p1: 'Как протече фалшивото ти парти? Изпрати ни снимки и ни разкажи на: hello@fineacts.co'
-    },
-    en: {
-        title: 'Contact us',
-        p1: 'Tell us about your Fake Cake Party! Send us pictures and stories at: hello@fineacts.co'
-    }
-})

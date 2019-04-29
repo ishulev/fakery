@@ -67,7 +67,7 @@ class App extends Component {
                         <p>{mainText.campaignDetails.p4}</p>
                     </div>
                 </section>
-                {this.state.language === 'bg' ? (<section>
+                {this.state.language === 'bg' ? (<section className="checklist">
                     <div className="container">
                         <h2>Чеклист</h2>
                         <h4>Почти всеки от нас в даден момент и до определена степен е бил подвеждан от фалшива новина. Какво можеш да направиш, за да избегнеш капана?</h4>
@@ -101,6 +101,7 @@ class App extends Component {
                             <li>{mainText.formatString(mainText.host.li4, <a href="#">{mainText.host.link3}</a>)}</li>
                             <li>{mainText.host.li5}</li>
                         </ul>
+                        <h4 className="mt-5">{mainText.hello.p1}</h4>
                     </div>
                 </section>
                 <div className="more-info">
