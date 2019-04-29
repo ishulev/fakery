@@ -58,10 +58,26 @@ export const mainText = new LocalizedStrings({
             link: 'Организирай свое собствено фалшиво парти'
         },
         campaignDetails: {
-            p1: '',
-            p2: '',
-            p3: '',
-            p4: ''
+            p1: 'Fakery e кампания на {0}, глобална платформа, която среща изкуството и активизма в името на социалната промяна.',
+            p2: 'Зад идеята на Fakery (the Fake News Bakery) са сценографката Илияна Кънчева и програмистът Иван Шулев.',
+            p3: 'Fakery e победителят във второто издание на {0} – иновативни събития, в които мултидисциплинарни отбори от артисти и технолози търсят решения на казуси в сферата на човешките права.',
+            p4: 'Отборите работят заедно в рамките на уикенд и прототипират проекти, които повишават осведомеността или допринасят за конкретно решение на съответния проблем. Жури награждава най-добрите идеи със средства за развитие.'
+        },
+        host: {
+            title: 'Направи фейк кейк парти',
+            p1: 'Разговорът за фалшивите новини не е лесен. Как изобщо да го започнеш?',
+            p2: 'Ето така – каниш приятели или роднини, част от които често консумират фалшиви новини, на Фейк кейк парти. Приготвяш подмолната ни рецепта за къпкейкове или създаваш свой кулинарен кошмар и даваш нужния забавен старт на иначе тегав разговор.',
+            subtitle: 'Кексчета от ада',
+            recipe1: 'В купа разбиваш две яйца, две чаени чаши кисело мляко, половин чаена чаша олио и една чаена лъжица сода. Добавяш две чаени чаши брашно. Мяташ десет супени лъжици табаско и/или рибен сос. Добавяш чаена чаша натрошено сирене и подправки на око и разбъркваш добре. Хей, имам останал малко салам от неделя? Режеш на ситно и слагаш. Във всяко гнездо на формата за мъфини слагаш по една хартиена кошничка. Изливаш сместа във всяка кошничка, като пълниш до достигане на ¾ от обема ѝ. Печеш в предварително загрята на 180-200 градуса фурна, за около 20-25 минути. Паралелно разбиваш с миксер смес от чаша пудра захар, пакет масло, щипка ванилия, и малко мляко, до получаване на гъста смес. Декорираш кексчетата с шприц, докато не станат красиви като каузата ти.',
+            ul: 'Няколко съвета за този (и всеки подобен) разговор:',
+            li1: 'Не бъди назидателен, не размахвай пръст. Никой не харесва демонстрации на морално превъзходство и самодоволна арогантност. Хората спират да слушат, ако им обясниш, че грешат, и влизат в защитен режим. Не искаш в една вечер и да натровиш, и да се скараш с вашите.',
+            li2: 'Подходи много леко и внимателно. Не рамкирай партито като “интервенция” за конкретен човек – това е ужасно смущаващо и няма да е ефективно. По-скоро го представи като по-широк разговор по темата, който цели семейството ти / приятелският ти кръг да взема информирани решения, и да не попада в клопката на лошите. Така сте “вие” срещу “тях”; а не ти срещу баба.',
+            li3: 'Започни с някаква притеснителна {0}, която демонстрира размера на проблема. Дай пример, в който самият ти си бил подведен от фалшива новина. Питай дали друг е имал подобен опит, или поне съмнения. Подготви се с още примери на брутални лъжи, стабилно {1}.',
+            li4: 'Премини към брейнсторминг – как можем да се защитим от фалшивите новини? Как да ги разпознаваме? Как да подобрим медийната си диета? Дай някакви {0} и питай за още идеи.',
+            li5: 'Забавлявай се. Фалшивите новини оставят лош вкус, който само сладостта от това да ги борим със смях може да отмие.',
+            link1: 'статистика',
+            link2: 'минавали за истина',
+            link3: 'предложения'
         }
     },
     en: {
@@ -83,10 +99,26 @@ export const mainText = new LocalizedStrings({
             link: 'Host your own Fake Cake Party'
         },
         campaignDetails: {
-            p1: '',
-            p2: '',
-            p3: '',
-            p4: ''
+            p1: 'Fakery is a campaign by {0}, a global platform that bridges art and activism in the name of social change.',
+            p2: 'Behind the idea of ​​Fakery (The Fake News Bakery) are the stage designer Iliyana Kancheva and the IT programmer Ivan Shulev.',
+            p3: 'Fakery is the winner of the second edition of {0} - innovative events where multidisciplinary teams of artists and technologists seek solutions to human rights issues.',
+            p4: 'The teams work together over a weekend and prototype ideas that raise awareness or provide solutions for a specific problem. The jury awards the best idea with a development grant.'
+        },
+        host: {
+            title: 'Host a fake cake party',
+            p1: 'The conversation about fake news isn’t easy. How to even start it?',
+            p2: 'Here’s how – invite friends or relatives, some of whom you know for a fact often consume fake news, to a Fake Cake Party. Prepare our subversive cupcake recipe, or create your own alluring culinary nightmare, and give an otherwise dreadfully serious topic a humorous twist.',
+            subtitle: 'Cupcakes from Hell',
+            recipe1: 'In a bowl, mix two eggs, two cups of yogurt, half a cup of oil and one teaspoon of soda. Add two cups of flour, and ten tablespoons of Tabasco. Add a cup of crumbled cheese and whatever spices you’ve got, and mix well. Hey, you’ve got a little bit of salami left over from the weekend? Chop it up and throw it in. Place cupcake liners for baking in the cupcake molds. Fill the liners with the mixture to ¾ full. Preheat the oven to 180-200 C and bake for 20-25 minutes. Meanwhile, mix a cup of powdered sugar, two sticks of butter, a pinch of vanilla, and a little bit of milk till it’s thick. Decorate the cupcakes using a pastry bag, so they become as beautiful as your cause.',
+            ul: 'Some tips for this and other similar conversations:',
+            li1: 'Don’t wave the righteous finger. No one likes demonstrations of moral superiority and self-righteous arrogance. People stop listening if you tell them they are wrong, as it often triggers a defensive mode. You don’t want to poison your parents and get in a fight with them all in one night.',
+            li2: 'Take a light and careful approach. Don’t frame the party as an "intervention" for a particular person. It will be terribly embarrassing for all involved and definitely not effective. Rather, present it as a general conversation on how your family and circle of friends can make informed decisions, without falling into the fake news trap. Create a feeling of togetherness, y’all vs. the bad guys, rather than ending up in the you vs. your grandma scenario.',
+            li3: 'Share some worrying {0} that illustrate the size of the problem with fake news. Give an example in which you yourself were misled by fake news. Ask if anyone else has had a similar experience, or was suspicious of a news story. Be prepared with more examples of brutal lies that have {1}.',
+            li4: 'Move to open brainstorming - how can we protect ourselves from fake news? How do we recognize them? How can we improve our media diet? Give {0}, and ask for ideas.',
+            li5: 'And have fun! Because what’s the point otherwise. Fakes news leaves a bad taste, that only the sweetness of battling the phenomenon with laughter can wash away.',
+            link1: 'statistics',
+            link2: 'passed for truth',
+            link3: 'suggestions'
         }
     }
 })
