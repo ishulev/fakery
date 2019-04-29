@@ -35,11 +35,6 @@ class App extends Component {
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
                 </div>
-                <div className="intro--footer">
-                    <div className="container">
-                        Soc ikoni
-                    </div>
-                </div>
                 <section>
                     <div className="pb-5 pt-4" style={{ backgroundColor: '#C28A81', color: '#fff' }}>
                         <div className="container">
@@ -160,7 +155,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                <Footer lang={this.state.language} />
             </div>
         )
     }

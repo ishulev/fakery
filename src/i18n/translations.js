@@ -2,18 +2,18 @@ import LocalizedStrings from 'react-localization';
 
 export const intro = new LocalizedStrings({
     bg: {
-            p1: 'Фалшивите новини вече не са новина. Но реалните последствия от тях предстои да бъдат анализирани и разбрани.',
-            p2: 'Фалшивите новини винаги ни засягат лично. Но е трудно да го разберем, докато не станем тяхна жертва.',
-            p3: 'Това беше и причината да създадем експеримент с една “сензация”, която се оказа неустоима както за медиите, така и за публиката.',
-            p4: '“Новината”, която приготвихме, показа на неподозиращи хора каква миризма и вкус могат да имат фалшивите новини в реалния живот.',
-            p5: 'Гледай видеото и след това прочети каква е рецептата ни да се преборим тях.'
+        p1: 'Фалшивите новини вече не са новина. Но реалните последствия от тях предстои да бъдат анализирани и разбрани.',
+        p2: 'Фалшивите новини винаги ни засягат лично. Но е трудно да го разберем, докато не станем тяхна жертва.',
+        p3: 'Това беше и причината да създадем експеримент с една “сензация”, която се оказа неустоима както за медиите, така и за публиката.',
+        p4: '“Новината”, която приготвихме, показа на неподозиращи хора каква миризма и вкус могат да имат фалшивите новини в реалния живот.',
+        p5: 'Гледай видеото и след това прочети каква е рецептата ни да се преборим тях.'
     },
     en: {
-            p1: 'Fake news is no longer news. Тheir real consequences however are yet to be analyzed and understood.',
-            p2: 'Fake news always affects us personally. But it is difficult to understand how until one falls victim to their grasp.',
-            p3: 'That\'s why we created an experiment with a media "sensation" that turned out to be irresistible.',
-            p4: 'The "news" story we published demonstrated to unsuspecting people the smell and taste of fake news in real life.',
-            p5: 'Watch the video and then read about our recipe on how to keep fake news at bay.'
+        p1: 'Fake news is no longer news. Тheir real consequences however are yet to be analyzed and understood.',
+        p2: 'Fake news always affects us personally. But it is difficult to understand how until one falls victim to their grasp.',
+        p3: 'That\'s why we created an experiment with a media "sensation" that turned out to be irresistible.',
+        p4: 'The "news" story we published demonstrated to unsuspecting people the smell and taste of fake news in real life.',
+        p5: 'Watch the video and then read about our recipe on how to keep fake news at bay.'
     }
 });
 
@@ -80,22 +80,22 @@ export const mainText = new LocalizedStrings({
             link3: 'предложения'
         },
         resources: {
-           title: 'Ресурси',
-           subtitle1: 'Научи се да разпознаваш фалшивите новини',
-           subtitle2: 'Тествай уменията си с тези игри', 
-           subtitle3: 'Гледай TED лекции по темата', 
-           subtitle4: 'Научи повече за феномена', 
-           subtitle5: 'Ако се съмняваш в дадена новина, изпрати сигнал до платформа за проверяване на новини',
-           link3_1: 'Как фалшивите новини нанасят реална вреда',
-           link3_2: 'Три начина как да идентифицираш лоша статистика',
-           link3_3: 'Как да разграничиш между факти и измислица',
-           link4_1: 'Мащабно изследване (Science, 2018) за разпространението на фалшиви новини',
-           link4_2: 'Евробарометър (2018) за фалшивите новини и дезинформацията онлайн',
-           link4_3: 'Доклад за дигитални новини на Reuters Institute (2018) | University of Oxford',
-           link4_4: 'Идеи за противодействие от Асоциацията на Европейските журналисти',
-           link4_5: 'Набор от ресурси от американския Център за медийна грамотност',
-           link5_1: 'В България: ',
-           link5_2: 'По света: '
+            title: 'Ресурси',
+            subtitle1: 'Научи се да разпознаваш фалшивите новини',
+            subtitle2: 'Тествай уменията си с тези игри',
+            subtitle3: 'Гледай TED лекции по темата',
+            subtitle4: 'Научи повече за феномена',
+            subtitle5: 'Ако се съмняваш в дадена новина, изпрати сигнал до платформа за проверяване на новини',
+            link3_1: 'Как фалшивите новини нанасят реална вреда',
+            link3_2: 'Три начина как да идентифицираш лоша статистика',
+            link3_3: 'Как да разграничиш между факти и измислица',
+            link4_1: 'Мащабно изследване (Science, 2018) за разпространението на фалшиви новини',
+            link4_2: 'Евробарометър (2018) за фалшивите новини и дезинформацията онлайн',
+            link4_3: 'Доклад за дигитални новини на Reuters Institute (2018) | University of Oxford',
+            link4_4: 'Идеи за противодействие от Асоциацията на Европейските журналисти',
+            link4_5: 'Набор от ресурси от американския Център за медийна грамотност',
+            link5_1: 'В България: ',
+            link5_2: 'По света: '
         }
     },
     en: {
@@ -141,9 +141,9 @@ export const mainText = new LocalizedStrings({
         resources: {
             title: 'Resources',
             subtitle1: 'Learn how to spot fake news, in several easy steps',
-            subtitle2: 'Test your skills with these games', 
-            subtitle3: 'Watch TED lectures on the topic', 
-            subtitle4: 'Learn more about the phenomenon', 
+            subtitle2: 'Test your skills with these games',
+            subtitle3: 'Watch TED lectures on the topic',
+            subtitle4: 'Learn more about the phenomenon',
             subtitle5: 'If you are unsure of a certain news story, send a question to a fact-checking platform',
             link3_1: 'How fake news does real harm',
             link3_2: '3 ways to spot a bad statistic',
@@ -155,6 +155,17 @@ export const mainText = new LocalizedStrings({
             link4_5: 'Resources by the Center for Media Literacy',
             link5_1: '',
             link5_2: ''
-         }
+        }
+    }
+});
+
+export const footer = new LocalizedStrings({
+    bg: {
+        title: 'Контакти',
+        p1: 'Как протече фалшивото ти парти? Изпрати ни снимки и ни разкажи на: hello@fineacts.co'
+    },
+    en: {
+        title: 'Contact us',
+        p1: 'Tell us about your Fake Cake Party! Send us pictures and stories at: hello@fineacts.co'
     }
 })
