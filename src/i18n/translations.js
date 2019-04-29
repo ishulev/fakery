@@ -78,6 +78,24 @@ export const mainText = new LocalizedStrings({
             link1: 'статистика',
             link2: 'минавали за истина',
             link3: 'предложения'
+        },
+        resources: {
+           title: 'Ресурси',
+           subtitle1: 'Научи се да разпознаваш фалшивите новини',
+           subtitle2: 'Тествай уменията си с тези игри', 
+           subtitle3: 'Гледай TED лекции по темата', 
+           subtitle4: 'Научи повече за феномена', 
+           subtitle5: 'Ако се съмняваш в дадена новина, изпрати сигнал до платформа за проверяване на новини',
+           link3_1: 'Как фалшивите новини нанасят реална вреда',
+           link3_2: 'Три начина как да идентифицираш лоша статистика',
+           link3_3: 'Как да разграничиш между факти и измислица',
+           link4_1: 'Мащабно изследване (Science, 2018) за разпространението на фалшиви новини',
+           link4_2: 'Евробарометър (2018) за фалшивите новини и дезинформацията онлайн',
+           link4_3: 'Доклад за дигитални новини на Reuters Institute (2018) | University of Oxford',
+           link4_4: 'Идеи за противодействие от Асоциацията на Европейските журналисти',
+           link4_5: 'Набор от ресурси от американския Център за медийна грамотност',
+           link5_1: 'В България: ',
+           link5_2: 'По света: '
         }
     },
     en: {
@@ -119,6 +137,24 @@ export const mainText = new LocalizedStrings({
             link1: 'statistics',
             link2: 'passed for truth',
             link3: 'suggestions'
-        }
+        },
+        resources: {
+            title: 'Resources',
+            subtitle1: 'Learn how to spot fake news, in several easy steps',
+            subtitle2: 'Test your skills with these games', 
+            subtitle3: 'Watch TED lectures on the topic', 
+            subtitle4: 'Learn more about the phenomenon', 
+            subtitle5: 'If you are unsure of a certain news story, send a question to a fact-checking platform',
+            link3_1: 'How fake news does real harm',
+            link3_2: '3 ways to spot a bad statistic',
+            link3_3: 'How to separate fact and fiction online',
+            link4_1: 'Major study in Science (2018) on the spread of true and false news online',
+            link4_2: 'Eurobarmeter study (2018) on fake news and disinformation online',
+            link4_3: 'Study on digital news by the Reuters Institute | University of Oxford (2018)',
+            link4_4: '',
+            link4_5: 'Resources by the Center for Media Literacy',
+            link5_1: '',
+            link5_2: ''
+         }
     }
 })

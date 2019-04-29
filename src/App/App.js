@@ -110,17 +110,17 @@ class App extends Component {
                 </section>
                 <div className="more-info">
                     <div className="container">
-                        <h2 className="mt-0">Ресурси</h2>
+                        <h2 className="mt-0">{mainText.resources.title}</h2>
                         <div className="row">
                             <div className="col-md-4">
-                                <h4>Научи се да разпознаваш фалшивите новини:</h4>
+                                <h4>{mainText.resources.subtitle1}:</h4>
                                 <ul>
                                     <li><a href="https://www.freedomforuminstitute.org/first-amendment-center/primers/fake-news-primer/">Freedom Forum Institute</a></li>
                                     <li><a href="https://www.ifla.org/publications/node/11174">International Federation of Library Associations</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-4">
-                                <h4>Тествай уменията си с тези игри:</h4>
+                                <h4>{mainText.resources.subtitle2}:</h4>
                                 <ul>
                                     <li>
                                         <a href="https://playfakenews.com/">Fake News: The Game</a>
@@ -131,30 +131,30 @@ class App extends Component {
                                 </ul>
                             </div>
                             <div className="col-md-4">
-                                <h4>Гледай TED лекции по темата:</h4>
+                                <h4>{mainText.resources.subtitle3}:</h4>
                                 <ul>
-                                    <li><a href="https://www.ted.com/talks/stephanie_busari_how_fake_news_does_real_harm" target="_blank">Как фалшивите новини нанасят реална вреда</a></li>
-                                    <li><a href="https://www.ted.com/talks/mona_chalabi_3_ways_to_spot_a_bad_statistic?referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Три начина как да идентифицираш лоша статистика</a></li>
-                                    <li><a href="https://www.ted.com/talks/markham_nolan_how_to_separate_fact_and_fiction_online?language=en&referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">Как да разграничиш между факти и измислица</a></li>
+                                    <li><a href="https://www.ted.com/talks/stephanie_busari_how_fake_news_does_real_harm" target="_blank">{mainText.resources.link3_1}</a></li>
+                                    <li><a href="https://www.ted.com/talks/mona_chalabi_3_ways_to_spot_a_bad_statistic?referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">{mainText.resources.link3_2}</a></li>
+                                    <li><a href="https://www.ted.com/talks/markham_nolan_how_to_separate_fact_and_fiction_online?language=en&referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">{mainText.resources.link3_3}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                                <h4>Научи повече за феномена:</h4>
+                                <h4>{mainText.resources.subtitle4}:</h4>
                                 <ul>
-                                    <li><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">Най-мащабното изследване</a> (Science, март 2018) за разпространението на фалшиви и достоверни новини</li>
-                                    <li><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">Евробарометър</a> (април 2018) за фалшивите новини и дезинформацията онлайн</li>
-                                    <li><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">Доклад за дигитални новини</a> на Reusters Institute (2018) | University of Oxford</li>
-                                    <li><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">Идеи за противодействие</a> от Асоциацията на Европейските журналисти</li>
-                                    <li><a href="https://www.medialit.org/">Набор от ресурси</a> от американския Център за медийна грамотност</li>
+                                    <li><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">{mainText.resources.link4_1}</a></li>
+                                    <li><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">{mainText.resources.link4_2}</a></li>
+                                    <li><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">{mainText.resources.link4_3}</a></li>
+                                    { this.state.language === 'bg' ? (<li><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">{mainText.resources.link4_4}</a></li>) : '' }
+                                    <li><a href="https://www.medialit.org/">{mainText.resources.link4_5}</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-6">
-                                <h4>Ако се съмняваш в дадена новина, изпрати сигнал до платформа за проверяване на новини:</h4>
+                                <h4>{mainText.resources.subtitle5}:</h4>
                                 <ul>
-                                    <li>В България: <a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check</a> на Mediapool; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</li>
-                                    <li>По света: <a href="https://www.snopes.com/">Snopes</a>; <a href="http://www.politifact.com/">Politifact</a>; <a href="https://www.factcheck.org/">FactCheck.org</a></li>
+                                    { this.state.language === 'bg' ? (<li>{mainText.resources.link5_1}<a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check на Mediapool</a>; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</li>) : '' }
+                                    <li>{mainText.resources.link5_2}<a href="https://www.snopes.com/">Snopes</a>; <a href="http://www.politifact.com/">Politifact</a>; <a href="https://www.factcheck.org/">FactCheck.org</a></li>
                                 </ul>
                             </div>
                         </div>
