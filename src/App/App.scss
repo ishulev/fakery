@@ -110,6 +110,10 @@ section {
   color: #fff;
   padding-top: 35px;
   padding-bottom: 70px;
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
 }
 .intro--footer {
   background-color: #543E5C;

@@ -67,7 +67,7 @@ class App extends Component {
                         <p>{mainText.campaignDetails.p4}</p>
                     </div>
                 </section>
-                { this.state.language === 'bg' ? (<section>
+                {this.state.language === 'bg' ? (<section>
                     <div className="container">
                         <h2>Чеклист</h2>
                         <h4>Почти всеки от нас в даден момент и до определена степен е бил подвеждан от фалшива новина. Какво можеш да направиш, за да избегнеш капана?</h4>
@@ -107,14 +107,22 @@ class App extends Component {
                     <div className="container">
                         <h2 className="mt-0">{mainText.resources.title}</h2>
                         <div className="row">
+                            <div className="col-md-8">
+                                <h4>{mainText.resources.subtitle4}:</h4>
+                                <ul>
+                                    <li><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">{mainText.resources.link4_1}</a></li>
+                                    <li><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">{mainText.resources.link4_2}</a></li>
+                                    <li><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">{mainText.resources.link4_3}</a></li>
+                                    {this.state.language === 'bg' ? (<li><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">{mainText.resources.link4_4}</a></li>) : ''}
+                                    <li><a href="https://www.medialit.org/">{mainText.resources.link4_5}</a></li>
+                                </ul>
+                            </div>
                             <div className="col-md-4">
                                 <h4>{mainText.resources.subtitle1}:</h4>
                                 <ul>
                                     <li><a href="https://www.freedomforuminstitute.org/first-amendment-center/primers/fake-news-primer/">Freedom Forum Institute</a></li>
                                     <li><a href="https://www.ifla.org/publications/node/11174">International Federation of Library Associations</a></li>
                                 </ul>
-                            </div>
-                            <div className="col-md-4">
                                 <h4>{mainText.resources.subtitle2}:</h4>
                                 <ul>
                                     <li>
@@ -124,8 +132,11 @@ class App extends Component {
                                         <a href="http://factitious.augamestudio.com/#/">Factitious</a>
                                     </li>
                                 </ul>
+
                             </div>
-                            <div className="col-md-4">
+                        </div>
+                        <div className="row">
+                            <div className="col-md-8">
                                 <h4>{mainText.resources.subtitle3}:</h4>
                                 <ul>
                                     <li><a href="https://www.ted.com/talks/stephanie_busari_how_fake_news_does_real_harm" target="_blank">{mainText.resources.link3_1}</a></li>
@@ -133,22 +144,10 @@ class App extends Component {
                                     <li><a href="https://www.ted.com/talks/markham_nolan_how_to_separate_fact_and_fiction_online?language=en&referrer=playlist-how_navigate_questionable_information&utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare" target="_blank">{mainText.resources.link3_3}</a></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h4>{mainText.resources.subtitle4}:</h4>
-                                <ul>
-                                    <li><a href="http://science.sciencemag.org/content/359/6380/1146" target="_blank">{mainText.resources.link4_1}</a></li>
-                                    <li><a href="http://ec.europa.eu/commfrontoffice/publicopinion/index.cfm/ResultDoc/download/DocumentKy/82798" target="_blank">{mainText.resources.link4_2}</a></li>
-                                    <li><a href="http://media.digitalnewsreport.org/wp-content/uploads/2018/06/digital-news-report-2018.pdf?x89475" target="_blank">{mainText.resources.link4_3}</a></li>
-                                    { this.state.language === 'bg' ? (<li><a href="http://new.aej-bulgaria.org/%D1%84%D0%B0%D0%BB%D1%88%D0%B8%D0%B2%D0%B8%D1%82%D0%B5-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D1%81%D0%BE%D1%87%D0%B5%D0%BD%D0%B8-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%B4%D0%B5/">{mainText.resources.link4_4}</a></li>) : '' }
-                                    <li><a href="https://www.medialit.org/">{mainText.resources.link4_5}</a></li>
-                                </ul>
-                            </div>
-                            <div className="col-md-6">
+                            <div className="col-md-4">
                                 <h4>{mainText.resources.subtitle5}:</h4>
                                 <ul>
-                                    { this.state.language === 'bg' ? (<li>{mainText.resources.link5_1}<a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check на Mediapool</a>; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</li>) : '' }
+                                    {this.state.language === 'bg' ? (<li>{mainText.resources.link5_1}<a href="https://www.mediapool.bg/vyarno-ili-ne-cat74.html">Fact Check на Mediapool</a>; <a href="https://nova.bg/proveri">Проверка</a> от Нова телевизия.</li>) : ''}
                                     <li>{mainText.resources.link5_2}<a href="https://www.snopes.com/">Snopes</a>; <a href="http://www.politifact.com/">Politifact</a>; <a href="https://www.factcheck.org/">FactCheck.org</a></li>
                                 </ul>
                             </div>
@@ -156,7 +155,7 @@ class App extends Component {
                     </div>
                 </div>
                 <Footer lang={this.state.language} />
-            </div>
+            </div >
         )
     }
 }
