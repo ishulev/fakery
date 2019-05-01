@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 
 import './Nav.scss';
 import { navItems } from '../i18n/translations';
@@ -18,6 +18,9 @@ class MyNav extends Component {
     changeLang() {
         const langToChange = navItems.changeLang.toLowerCase();
         this.props.changeLang(langToChange, navItems);
+    }
+    backToTop() {
+        animateScroll.scrollToTop();
     }
     render() {
         return (
@@ -46,6 +49,7 @@ class MyNav extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
+                <i onClick={() => this.backToTop()} class="fas fa-arrow-circle-up back-to-top"></i>
             </Container>
         );
     }

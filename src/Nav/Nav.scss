@@ -11,3 +11,12 @@ nav.navbar {
    padding-left: 0;
    padding-right: 0; 
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    font-size: 40px;
+    color: #fff;
+  }
