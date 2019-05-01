@@ -27,7 +27,7 @@ class Checklist extends Component {
     }
     render() {
         return (
-            <div className={'checklist' + (this.props.lang === 'bg' ? '' : ' hidden')}>
+            <section className={'checklist' + (this.props.lang === 'bg' ? '' : ' hidden')}>
                 <div className="container">
                     <h2>Чеклист</h2>
                 </div>
@@ -35,7 +35,7 @@ class Checklist extends Component {
                     {this.state.checkItems.map((item, index) => {
                         return (
                             <Carousel.Item key={index}>
-                                <img className="img-fluid" src="holder.js/100px400?theme=meci&text=" />
+                                <img className="img-fluid" src="holder.js/100px350?theme=meci&text=" />
                                 <Carousel.Caption>
                                     <h2>{item.title}</h2>
                                     <p dangerouslySetInnerHTML={this.createMarkup(item.text)}></p>
@@ -45,7 +45,7 @@ class Checklist extends Component {
                     })}
 
                 </Carousel>
-            </div>
+            </section>
         );
     }
 }

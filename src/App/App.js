@@ -52,23 +52,28 @@ class App extends Component {
                 <section className="recipes">
                     <div className="container">
                         <h2 className="mt-0">{mainText.campaign.title}</h2>
-                        <p>{mainText.campaign.p1}</p>
-                        <p>{mainText.campaign.p2}</p>
-                        <p>{mainText.campaign.p3}</p>
-                        <p>
-                            {mainText.campaign.p4}
-                            <br />{mainText.campaign.p5}
-                            <br />{mainText.campaign.p6}
-                            <br />{mainText.formatString(mainText.campaign.p7, <a href="#">{mainText.campaign.link}</a>)}
-                        </p>
-                        <p>***</p>
-                        <p>{mainText.formatString(mainText.campaignDetails.p1, <a href="https://fineacts.co/">Fine Acts</a>)}</p>
-                        <p>{mainText.campaignDetails.p2}</p>
-                        <p>{mainText.formatString(mainText.campaignDetails.p3, <a href="https://actlabs.co/">ACT Labs</a>)}</p>
-                        <p>{mainText.campaignDetails.p4}</p>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <p>{mainText.campaign.p1}</p>
+                                <p>{mainText.campaign.p2}</p>
+                                <p>{mainText.campaign.p3}</p>
+                                <p>
+                                    {mainText.campaign.p4}
+                                    <br />{mainText.campaign.p5}
+                                    <br />{mainText.campaign.p6}
+                                    <br />{mainText.formatString(mainText.campaign.p7, <a href="#">{mainText.campaign.link}</a>)}
+                                </p>
+                            </div>
+                            <div className="col-md-6">
+                                <p>{mainText.formatString(mainText.campaignDetails.p1, <a href="https://fineacts.co/">Fine Acts</a>)}</p>
+                                <p>{mainText.campaignDetails.p2}</p>
+                                <p>{mainText.formatString(mainText.campaignDetails.p3, <a href="https://actlabs.co/">ACT Labs</a>)}</p>
+                                <p>{mainText.campaignDetails.p4}</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <Checklist lang={this.state.language}/>
+                <Checklist lang={this.state.language} />
                 <div className="padding-50 blue-background row justify-content-center align-items-center">
                     <img src={greenCupcake} className="rounded-circle round-shadow" alt="Green cupcake" style={{ maxWidth: '465px' }} />
                 </div>
