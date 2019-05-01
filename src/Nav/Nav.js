@@ -34,7 +34,7 @@ class MyNav extends Component {
                             <Nav.Link href="#link2">{navItems.about}</Nav.Link>
                             <Nav.Link href="#link3">{navItems.resources}</Nav.Link>
                             <Nav.Link href="#link4">{navItems.contact}</Nav.Link>
-                            <Nav.Link href="#link5" onSelect={() => this.changeLang()}>{navItems.changeLang}</Nav.Link>
+                            <Nav.Link href="#link5" onSelect={(ek, e) => {e.preventDefault(); this.changeLang();}}>{navItems.changeLang}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
