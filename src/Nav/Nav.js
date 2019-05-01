@@ -39,13 +39,17 @@ class MyNav extends Component {
                             <Link href="#" className="nav-link" activeClass="active" to="about" smooth={true}>
                                 {navItems.about}
                             </Link>
+                            {this.props.lang === 'bg' ? (<Link href="#" className="nav-link" activeClass="active" to="checklist" smooth={true}>
+                                {navItems.checklist}
+                            </Link>) : ''}
+
                             <Link href="#" className="nav-link" activeClass="active" to="resources" smooth={true}>
                                 {navItems.resources}
                             </Link>
                             <Link href="#" className="nav-link" activeClass="active" to="contact" smooth={true} offset={-50}>
                                 {navItems.contact}
                             </Link>
-                            <Nav.Link href="#link5" onSelect={(ek, e) => {e.preventDefault(); this.changeLang();}}>{navItems.changeLang}</Nav.Link>
+                            <Nav.Link href="#link5" onSelect={(ek, e) => { e.preventDefault(); this.changeLang(); }}>{navItems.changeLang}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

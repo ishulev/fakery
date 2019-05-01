@@ -27,7 +27,7 @@ class Checklist extends Component {
     }
     render() {
         return (
-            <section className={'checklist' + (this.props.lang === 'bg' ? '' : ' hidden')}>
+            <section name="checklist" className={'checklist' + (this.props.lang === 'bg' ? '' : ' hidden')}>
                 <div className="container">
                     <h2>Чеклист</h2>
                 </div>
