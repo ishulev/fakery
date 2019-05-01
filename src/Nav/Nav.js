@@ -27,13 +27,21 @@ class MyNav extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="#home">{navItems.phenomena}</Nav.Link>
-                            <Link href="#" className="nav-link" activeClass="active" to="organize" spy={true} smooth={true} offset={50} duration={500}>
+                            <Link href="#" className="nav-link" activeClass="active" to="phenom" smooth={true}>
+                                {navItems.phenomena}
+                            </Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="organize" smooth={true}>
                                 {navItems.organizeEvent}
                             </Link>
-                            <Nav.Link href="#link2">{navItems.about}</Nav.Link>
-                            <Nav.Link href="#link3">{navItems.resources}</Nav.Link>
-                            <Nav.Link href="#link4">{navItems.contact}</Nav.Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="about" smooth={true}>
+                                {navItems.about}
+                            </Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="resources" smooth={true}>
+                                {navItems.resources}
+                            </Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="contact" smooth={true} offset={-50}>
+                                {navItems.contact}
+                            </Link>
                             <Nav.Link href="#link5" onSelect={(ek, e) => {e.preventDefault(); this.changeLang();}}>{navItems.changeLang}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

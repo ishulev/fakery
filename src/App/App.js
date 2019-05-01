@@ -36,7 +36,7 @@ class App extends Component {
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
                 </div>
-                <section>
+                <section name="phenom">
                     <div className="pb-5 pt-4" style={{ backgroundColor: '#C28A81', color: '#fff' }}>
                         <div className="container">
                             <h2 className="mt-0">{mainText.phenom.title}</h2>
@@ -49,7 +49,7 @@ class App extends Component {
                         <img src={pinkCupcake} className="rounded-circle img-fluid round-shadow cupcake--max-width" alt="Pink cupcake" />
                     </div>
                 </section>
-                <section className="recipes">
+                <section name="about" className="recipes">
                     <div className="container">
                         <h2 className="mt-0">{mainText.campaign.title}</h2>
                         <div className="row">
@@ -92,7 +92,7 @@ class App extends Component {
                             <li>{mainText.formatString(mainText.host.li4, <a href="#">{mainText.host.link3}</a>)}</li>
                             <li>{mainText.host.li5}</li>
                         </ul>
-                        <h4 className="mt-5">{mainText.hello.p1}</h4>
+                        <h4 name="contact" className="mt-5">{mainText.hello.p1}</h4>
                     </div>
                 </section>
                 <div className="more-info">
@@ -127,7 +127,7 @@ class App extends Component {
 
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" name="resources">
                             <div className="col-md-8">
                                 <h4>{mainText.resources.subtitle3}:</h4>
                                 <ul>
