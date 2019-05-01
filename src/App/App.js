@@ -46,7 +46,7 @@ class App extends Component {
                         </div>
                     </div>
                     <div className="padding-50 pink-background row justify-content-center align-items-center">
-                        <img src={pinkCupcake} className="rounded-circle round-shadow" alt="Pink cupcake" style={{ maxWidth: '465px' }} />
+                        <img src={pinkCupcake} className="rounded-circle img-fluid round-shadow" alt="Pink cupcake" style={{ maxWidth: '465px' }} />
                     </div>
                 </section>
                 <section className="recipes">

@@ -14,13 +14,14 @@ class Intro extends Component {
     }
     render() {
         return (
-            <section className="d-flex flex-column section-intro">
-                <div className="flex-fill"></div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-7 col-lg d-flex flex-column">
-                            <img src={logoFull} style={{ 'maxWidth': '100px', 'marginBottom': '20px' }} alt="Fakery logo full" />
-                            <div className="flex-fill purple-padding--top purple-padding--bottom before-background bb--purple">
+            <div>
+                <div className="d-lg-none d-block">
+                    <div className="container">
+                        <img src={logoFull} style={{ 'maxWidth': '100px', 'marginBottom': '20px' }} alt="Fakery logo full" />
+                    </div>
+                    <div>
+                        <div className="purple-background purple-padding--top purple-padding--bottom">
+                            <div className="container">
                                 <p className="mr-md-4">{intro.p1}</p>
                                 <p>{intro.p2}</p>
                                 <p>{intro.p3}</p>
@@ -28,12 +29,29 @@ class Intro extends Component {
                                 <p>{intro.p5}</p>
                             </div>
                         </div>
-                        <div className="d-md-block d-none col-md purple-padding--bottom">
-                            <img className="img-fluid" src={plate} alt="Cupcake" />
-                        </div>
                     </div>
                 </div>
-            </section>
+                <section className="d-lg-flex d-none flex-column section-intro">
+                    <div className="flex-fill"></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-7 col-lg d-flex flex-column">
+                                <img src={logoFull} style={{ 'maxWidth': '100px', 'marginBottom': '20px' }} alt="Fakery logo full" />
+                                <div className="flex-fill purple-padding--top purple-padding--bottom before-background bb--purple">
+                                    <p className="mr-md-4">{intro.p1}</p>
+                                    <p>{intro.p2}</p>
+                                    <p>{intro.p3}</p>
+                                    <p>{intro.p4}</p>
+                                    <p>{intro.p5}</p>
+                                </div>
+                            </div>
+                            <div className="col-md purple-padding--bottom">
+                                <img className="img-fluid" src={plate} alt="Cupcake" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         );
     }
 }
