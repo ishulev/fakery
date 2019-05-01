@@ -68,7 +68,7 @@ class App extends Component {
                         <p>{mainText.campaignDetails.p4}</p>
                     </div>
                 </section>
-                {this.state.language === 'bg' ? (<Checklist />) : ''}
+                <Checklist lang={this.state.language}/>
                 <div className="padding-50 blue-background row justify-content-center align-items-center">
                     <img src={greenCupcake} className="rounded-circle round-shadow" alt="Green cupcake" style={{ maxWidth: '465px' }} />
                 </div>
