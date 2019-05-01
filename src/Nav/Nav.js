@@ -22,9 +22,9 @@ class MyNav extends Component {
     render() {
         return (
             <Container>
-                <Navbar sticky="top" expand="lg" collapseOnSelect="true">
+                <Navbar expand="lg" collapseOnSelect="true">
                     {/* <Navbar.Brand href="#home" className="logo-label"><img src={logo} width="100px" alt="" /></Navbar.Brand> */}
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
                             <Nav.Link href="#home">{navItems.phenomena}</Nav.Link>
