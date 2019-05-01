@@ -46,7 +46,7 @@ class App extends Component {
                         </div>
                     </div>
                     <div className="padding-50 pink-background row justify-content-center align-items-center">
-                        <img src={pinkCupcake} className="rounded-circle img-fluid round-shadow" alt="Pink cupcake" style={{ maxWidth: '465px' }} />
+                        <img src={pinkCupcake} className="rounded-circle img-fluid round-shadow cupcake--max-width" alt="Pink cupcake" />
                     </div>
                 </section>
                 <section className="recipes">
@@ -75,7 +75,7 @@ class App extends Component {
                 </section>
                 <Checklist lang={this.state.language} />
                 <div className="padding-50 blue-background row justify-content-center align-items-center">
-                    <img src={greenCupcake} className="rounded-circle round-shadow" alt="Green cupcake" style={{ maxWidth: '465px' }} />
+                    <img src={greenCupcake} className="rounded-circle round-shadow img-fluid cupcake--max-width" alt="Green cupcake" />
                 </div>
                 <section name="organize" className="organize-party">
                     <div className="container">
