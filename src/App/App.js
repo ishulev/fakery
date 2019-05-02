@@ -86,13 +86,13 @@ class App extends Component {
                         <h2>{mainText.host.title}</h2>
                         <div className="row">
                             <div className="col-md-6">
-                                <p>{mainText.host.p1}</p>
+                                <h4>{mainText.host.p1}</h4>
                                 <p>{mainText.host.p2}</p>
                                 <h3>{mainText.host.subtitle}</h3>
                                 <p>{mainText.host.recipe1}</p>
                             </div>
                             <div className="col-md-6">
-                                <p>{mainText.host.ul}</p>
+                                <h4>{mainText.host.ul}</h4>
                                 <ul>
                                     <li>{mainText.host.li1}</li>
                                     <li>{mainText.host.li2}</li>
