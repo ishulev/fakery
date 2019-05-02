@@ -13,7 +13,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            language: 'bg'
+            language: 'en'
         }
     }
     componentDidMount() {
@@ -38,7 +38,7 @@ class App extends Component {
                     {this.state.language === 'bg' ?
                         (<iframe title="fake-video" src="//player.vimeo.com/video/333771878" allowFullScreen></iframe>)
                         :
-                        (<iframe title="fake-video" src="//player.vimeo.com/video/333771380" allowFullScreen></iframe>) }
+                        (<iframe title="fake-video" src="//player.vimeo.com/video/333771380" allowFullScreen></iframe>)}
                 </div>
                 <section name="phenom">
                     <div className="pb-5 pt-4" style={{ backgroundColor: '#C28A81', color: '#fff' }}>
@@ -84,18 +84,24 @@ class App extends Component {
                 <section name="organize" className="organize-party">
                     <div className="container">
                         <h2>{mainText.host.title}</h2>
-                        <p>{mainText.host.p1}</p>
-                        <p>{mainText.host.p2}</p>
-                        <h3>{mainText.host.subtitle}</h3>
-                        <p>{mainText.host.recipe1}</p>
-                        <p>{mainText.host.ul}</p>
-                        <ul>
-                            <li>{mainText.host.li1}</li>
-                            <li>{mainText.host.li2}</li>                            
-                            <li>{mainText.formatString(mainText.host.li3, <Link href="#" to="phenom" smooth={true}>{mainText.host.link1}</Link>, <a target="_blank" rel="noopener noreferrer" href="https://www.buzzfeednews.com/article/craigsilverman/facebook-fake-news-hits-2018">{mainText.host.link2}</a>)}</li>
-                            <li>{mainText.formatString(mainText.host.li4, <Link href="#" to="resources" smooth={true}>{mainText.host.link3}</Link>)}</li>
-                            <li>{mainText.host.li5}</li>
-                        </ul>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <p>{mainText.host.p1}</p>
+                                <p>{mainText.host.p2}</p>
+                                <h3>{mainText.host.subtitle}</h3>
+                                <p>{mainText.host.recipe1}</p>
+                            </div>
+                            <div className="col-md-6">
+                                <p>{mainText.host.ul}</p>
+                                <ul>
+                                    <li>{mainText.host.li1}</li>
+                                    <li>{mainText.host.li2}</li>
+                                    <li>{mainText.formatString(mainText.host.li3, <Link href="#" to="phenom" smooth={true}>{mainText.host.link1}</Link>, <a target="_blank" rel="noopener noreferrer" href="https://www.buzzfeednews.com/article/craigsilverman/facebook-fake-news-hits-2018">{mainText.host.link2}</a>)}</li>
+                                    <li>{mainText.formatString(mainText.host.li4, <Link href="#" to="resources" smooth={true}>{mainText.host.link3}</Link>)}</li>
+                                    <li>{mainText.host.li5}</li>
+                                </ul>
+                            </div>
+                        </div>
                         <h4 name="contact" className="mt-5">{mainText.hello.p1}</h4>
                     </div>
                 </section>

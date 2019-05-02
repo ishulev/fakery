@@ -22,6 +22,7 @@ class Intro extends Component {
                     <div>
                         <div className="purple-background purple-padding--top purple-padding--bottom">
                             <div className="container">
+                                <h3>Cake news</h3>
                                 <p className="mr-md-4">{intro.p1}</p>
                                 <p>{intro.p2}</p>
                                 <p>{intro.p3}</p>
@@ -38,6 +39,7 @@ class Intro extends Component {
                             <div className="col-md-7 col-lg d-flex flex-column">
                                 <img src={logoFull} style={{ 'maxWidth': '100px', 'marginBottom': '20px' }} alt="Fakery logo full" />
                                 <div className="flex-fill purple-padding--top purple-padding--bottom before-background bb--purple">
+                                    <h3>Cake news</h3>
                                     <p className="mr-md-4">{intro.p1}</p>
                                     <p>{intro.p2}</p>
                                     <p>{intro.p3}</p>
