@@ -35,7 +35,10 @@ class App extends Component {
                 <Nav lang={this.state.language} changeLang={this.changeLang.bind(this)} />
                 <Intro lang={this.state.language} />
                 <div className="embed-responsive embed-responsive-16by9">
-                    <iframe title="fake-video" src="//player.vimeo.com/video/22428395" allowFullScreen></iframe>
+                    {this.state.language === 'bg' ?
+                        (<iframe title="fake-video" src="//player.vimeo.com/video/333771878" allowFullScreen></iframe>)
+                        :
+                        (<iframe title="fake-video" src="//player.vimeo.com/video/333771380" allowFullScreen></iframe>) }
                 </div>
                 <section name="phenom">
                     <div className="pb-5 pt-4" style={{ backgroundColor: '#C28A81', color: '#fff' }}>
