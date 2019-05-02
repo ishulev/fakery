@@ -28,7 +28,7 @@ export const navItems = new LocalizedStrings({
         changeLang: 'EN'
     },
     en: {
-        phenomena: 'Phenomenon',
+        phenomena: 'The phenomenon',
         organizeEvent: 'Fake party',
         about: 'The campaign',
         checklist: 'Checklist',
@@ -104,13 +104,13 @@ export const mainText = new LocalizedStrings({
     },
     en: {
         phenom: {
-            title: 'Phenomenon',
+            title: 'The phenomenon',
             p1: 'Fake news is the dissemination of information that has been fabricated or tampered with, with the intention to deceive and mislead others.',
             p2: 'The challenge of deliberately spreading fake news is further made worse by the low levels of media literacy. On average, 46% of Europeans get their news through social media ({0}, 2016) and every sixth person shares news/articles on social networks without reading them ({1} 2016). Many people have a problem with fake news recognition – 80% cannot identify paid editorial content and 80% do not question the authenticity of online photos ({2}, 2016).',
             p3: 'Fake news leaves a bad taste. Their effects can be long-lasting and dangerous. They shape our behavior through manipulation; they influence the outcome of elections and, hence, the laws and the context in which we live; and can even put our health at risk.'
         },
         campaign: {
-            title: 'Campaign',
+            title: 'The campaign',
             p1: 'On May 3rd, World Press Freedom Day, we launched Fakery - a campaign to increase media literacy and counter fake news and disinformation.',
             p2: 'JOIN US IN THE BATTLE FOR TRUTH!',
             p3: 'This is how:',

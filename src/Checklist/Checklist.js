@@ -20,9 +20,9 @@ class Checklist extends Component {
             { title: 'Провери автора', text: 'Потърси дали е действителен автор или фалшиво име. Намираш ли негови снимки, интервюта с него, профили в социални медии, архив с публикации?' },
             { title: 'Има ли източници?', text: 'Обърни внимание на това какви източници са цитирани в самата статия. Самите те заслужават ли доверие? Представени ли са всички засегнати страни? Достоверната новина ще включва множество факти – цитати от солидни експерти, данни от проучвания и официална статистика.' },
             { title: 'Провери датата на публикацията', text: 'Често стари новини се постват като нови в социалните медии.' },
-            { title: 'Шега ли е?', text: 'Възможно е публикуваната информация да е сатира. В България примери за сатирични сайтове са <a href="https://neverojatno.wordpress.com/">"Бъзикилийкс"</a> и <a href="https://www.nenovinite.com/">"Не!новините"</a>, по света - <a href="https://www.theonion.com/">The Onion</a>, <a href="https://www.clickhole.com/">Clickhole</a>, <a href="http://www.private-eye.co.uk/">Private Eye</a>. Въпреки заглавията си и уточнението под всяка статия, че информацията е измислена, материали от тях често влизат в истинските новини.' },
+            { title: 'Шега ли е?', text: 'Възможно е публикуваната информация да е сатира. В България примери за сатирични сайтове са <a target="_blank" rel="noopener noreferrer" href="https://neverojatno.wordpress.com/">"Бъзикилийкс"</a> и <a target="_blank" rel="noopener noreferrer" href="https://www.nenovinite.com/">"Не!новините"</a>, по света - <a target="_blank" rel="noopener noreferrer" href="https://www.theonion.com/">The Onion</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.clickhole.com/">Clickhole</a>, <a target="_blank" rel="noopener noreferrer" href="http://www.private-eye.co.uk/">Private Eye</a>. Въпреки заглавията си и уточнението под всяка статия, че информацията е измислена, материали от тях често влизат в истинските новини.' },
             { title: 'Попитай експертите', text: 'Ако продължаваш да не си убеден, потърси утвърден експерт по темата (например в Twitter), за да потвърди дали информацията е вярна или не.' },
-            { title: 'Проверявай снимките', text: 'Ползвай инструмента <a href="https://www.labnol.org/internet/mobile-reverse-image-search/29014/">Google Reverse Search Image</a>, който позволява да търсиш с изображения, а не с думи. Така лесно ще можеш да разбереш дали конкретно изображение е било използвано извън контекста си.' },
+            { title: 'Проверявай снимките', text: 'Ползвай инструмента <a target="_blank" rel="noopener noreferrer" href="https://www.labnol.org/internet/mobile-reverse-image-search/29014/">Google Reverse Search Image</a>, който позволява да търсиш с изображения, а не с думи. Така лесно ще можеш да разбереш дали конкретно изображение е било използвано извън контекста си.' },
         ]});
     }
     render() {
@@ -35,7 +35,7 @@ class Checklist extends Component {
                     {this.state.checkItems.map((item, index) => {
                         return (
                             <Carousel.Item key={index}>
-                                <img className="img-fluid" src="holder.js/100px350?theme=meci&text=" />
+                                <img alt="Random generated img" className="img-fluid" src="holder.js/100px350?theme=meci&text=" />
                                 <Carousel.Caption>
                                     <h2>{item.title}</h2>
                                     <p dangerouslySetInnerHTML={this.createMarkup(item.text)}></p>

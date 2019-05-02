@@ -33,11 +33,11 @@ class MyNav extends Component {
                             <Link href="#" className="nav-link" activeClass="active" to="phenom" smooth={true}>
                                 {navItems.phenomena}
                             </Link>
-                            <Link href="#" className="nav-link" activeClass="active" to="organize" smooth={true}>
-                                {navItems.organizeEvent}
-                            </Link>
                             <Link href="#" className="nav-link" activeClass="active" to="about" smooth={true}>
                                 {navItems.about}
+                            </Link>
+                            <Link href="#" className="nav-link" activeClass="active" to="organize" smooth={true}>
+                                {navItems.organizeEvent}
                             </Link>
                             {this.props.lang === 'bg' ? (<Link href="#" className="nav-link" activeClass="active" to="checklist" smooth={true}>
                                 {navItems.checklist}
@@ -53,7 +53,7 @@ class MyNav extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                <i onClick={() => this.backToTop()} class="fas fa-arrow-circle-up back-to-top"></i>
+                <i onClick={() => this.backToTop()} className="fas fa-arrow-circle-up back-to-top"></i>
             </Container>
         );
     }
